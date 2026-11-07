@@ -1,7 +1,28 @@
 # CLAUDE.md
 
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 このフォルダは、架空の整体院「こもれび整体院」の1ページサイトを作る練習用プロジェクト。
 お店の内容(文章・料金・FAQなど)はすべて `shop-info.md` が正。文章を勝手に変えたり付け足したりしない。
+
+## 確認と公開
+
+- ビルド・テスト・Lint の仕組みはない。確認は `index.html` をブラウザで開いて、スマホ幅とPC幅(768px以上)の両方で見る。
+- 写真(Unsplash)とフォント(Google Fonts)はネットから読み込むので、確認にはネット接続が必要。
+- GitHub Pages で `main` ブランチを公開している(https://tukuru-dev-code.github.io/shop-info-pra/)。`main` に入れた変更はそのまま公開ページに反映される。
+- これまでの変更は、作業用ブランチ(例:`docs/add-readme`)→ プルリクエスト → `main` に取り込む流れで進めている。
+- 見た目やファイル構成を変えたら、`README.md`(工夫したところ・ページの構成・画面写真 `images/readme/`)も合わせて直す。
+
+## 今のコードの組み立て
+
+- ページは11ブロック(1.ヘッダー 〜 11.フッター、12.画面下の固定予約ボタン)。`style.css` のコメント見出しにこの番号が振ってあり、`index.html` の各 `<section id="...">` と対応している。
+- `style.css` は、上から `:root`(色の変数・半透明の薄い色)→ 共通部品(ボタンなど)→ ブロックごとのスマホ用 → ファイル末尾の `@media (min-width: 768px)` 1か所にPC用の調整をまとめる、という並び。PC用の調整を途中に散らさない。
+- `script.js` は HTML のクラス名を目印に動く。名前を変えるときは両方直すこと:
+  - `.menu-button` / `.nav` / `.nav__link` … スマホのメニュー開閉(`is-open` を付け外し)
+  - `.fade-in` … 画面に入ると `is-visible` が付いてふわっと表示(動きを減らす設定の人には動きなし)
+  - `.js-dummy-link` … LINEボタンなどダミーリンクを押してもページが飛ばないようにする
+- よくある質問の開け閉めは HTML の `<details>` だけで動いていて、JavaScript は使っていない。
+- ヘッダー分のずれは `style.css` の `scroll-padding-top` で調整している。
 
 ## 作り方の決まり
 
