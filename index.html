@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <!-- スマホの画面幅に合わせて表示する設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>こもれび整体院｜さくら台駅徒歩3分の完全予約制整体院（練習用の架空サイト）</title>
+  <meta name="description" content="デスクワークの腰痛・肩こりを根本から整える、さくら台駅から徒歩3分の完全予約制の整体院です。※制作練習用の架空のお店です。">
+
+  <!-- Google Fonts（見出し：Zen Maru Gothic／本文：Noto Sans JP） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 見た目のファイル -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== 1. ヘッダー ===================== -->
+  <header class="header">
+    <div class="header__inner">
+      <!-- 店名（押すとページの一番上へ） -->
+      <a href="#top" class="header__logo">こもれび整体院</a>
+
+      <div class="header__buttons">
+        <!-- 電話ボタン（スマホで押すと電話がかかる） -->
+        <a href="tel:000-0000-0000" class="header__tel" aria-label="電話をかける">
+          <span class="header__tel-icon" aria-hidden="true">☎</span>
+          <span class="header__tel-text">000-0000-0000</span>
+        </a>
+
+        <!-- メニューボタン（≡）。押すとメニューが開く -->
+        <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- メニューの中身（各セクションへのリンク） -->
+    <nav class="nav" id="global-nav" aria-label="ページ内メニュー">
+      <ul class="nav__list">
+        <li><a href="#worries" class="nav__link">お悩み</a></li>
+        <li><a href="#reasons" class="nav__link">選ばれる理由</a></li>
+        <li><a href="#menu" class="nav__link">メニュー・料金</a></li>
+        <li><a href="#director" class="nav__link">院長紹介</a></li>
+        <li><a href="#flow" class="nav__link">初めての方へ</a></li>
+        <li><a href="#voice" class="nav__link">お客様の声</a></li>
+        <li><a href="#faq" class="nav__link">よくある質問</a></li>
+        <li><a href="#access" class="nav__link">アクセス</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== 2. トップ（大きな写真＋キャッチコピー） ===================== -->
+    <section class="hero" id="top">
+      <div class="hero__inner">
+        <p class="hero__label">さくら台駅 東口から徒歩3分｜完全予約制</p>
+        <h1 class="hero__title">その痛み、<br>ひとりで<br class="sp-only">我慢しないで。</h1>
+        <p class="hero__lead">デスクワークの腰痛・肩こりを、<br class="sp-only">根本から整える。<br>駅から徒歩3分の完全予約制の整体院です。</p>
+        <a href="tel:000-0000-0000" class="button button--accent">電話で予約する</a>
+      </div>
+    </section>
+
+    <!-- ===================== 3. こんなお悩みありませんか ===================== -->
+    <section class="section" id="worries">
+      <div class="container">
+        <h2 class="section__title">こんなお悩み<br class="sp-only">ありませんか？</h2>
+
+        <!-- チェックリスト -->
+        <ul class="check-list fade-in">
+          <li class="check-list__item">朝起きると腰が重い</li>
+          <li class="check-list__item">夕方になると肩や首がガチガチになる</li>
+          <li class="check-list__item">マッサージに行っても数日で元に戻る</li>
+          <li class="check-list__item">頭痛や目の疲れが続いている</li>
+          <li class="check-list__item">産後から骨盤まわりが気になる</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 4. 選ばれる3つの理由 ===================== -->
+    <section class="section section--tint" id="reasons">
+      <div class="container">
+        <h2 class="section__title">こもれび整体院が<br class="sp-only">選ばれる3つの理由</h2>
+
+        <div class="reasons">
+          <!-- 理由1 -->
+          <article class="reason-card fade-in">
+            <img class="reason-card__image" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=70" alt="清潔なタオルと花が置かれた落ち着いた空間" loading="lazy" width="800" height="533">
+            <div class="reason-card__body">
+              <p class="reason-card__number">理由 01</p>
+              <h3 class="reason-card__title">ていねいなカウンセリング</h3>
+              <p>初回は30分かけて、痛みの原因を一緒に探します。</p>
+            </div>
+          </article>
+
+          <!-- 理由2 -->
+          <article class="reason-card fade-in">
+            <img class="reason-card__image" src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&q=70" alt="背中にやさしく手を当てて施術している様子" loading="lazy" width="800" height="533">
+            <div class="reason-card__body">
+              <p class="reason-card__number">理由 02</p>
+              <h3 class="reason-card__title">ボキボキしない<br>やさしい施術</h3>
+              <p>力まかせにしないので、整体が初めての方も安心です。</p>
+            </div>
+          </article>
+
+          <!-- 理由3 -->
+          <article class="reason-card fade-in">
+            <img class="reason-card__image" src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&q=70" alt="白い部屋に置かれた小さな観葉植物" loading="lazy" width="800" height="533">
+            <div class="reason-card__body">
+              <p class="reason-card__number">理由 03</p>
+              <h3 class="reason-card__title">自宅でできる<br>セルフケア指導</h3>
+              <p>通わなくても良い体を目指して、簡単なストレッチをお伝えします。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. メニューと料金 ===================== -->
+    <section class="section" id="menu">
+      <div class="container">
+        <h2 class="section__title">メニューと料金</h2>
+        <p class="section__note">表示価格はすべて税込です。</p>
+
+        <!-- 料金の一覧（1メニュー＝1行） -->
+        <ul class="price-list fade-in">
+          <li class="price-list__item price-list__item--recommend">
+            <div class="price-list__head">
+              <span class="price-list__name">初回カウンセリング＋整体</span>
+            </div>
+            <span class="price-list__time">60分</span>
+            <span class="price-list__price">
+              <s class="price-list__old">通常7,700円</s>
+              <strong>5,500円</strong>
+            </span>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__head"><span class="price-list__name">整体</span></div>
+            <span class="price-list__time">45分</span>
+            <span class="price-list__price"><strong>6,600円</strong></span>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__head"><span class="price-list__name">整体＋骨盤調整</span></div>
+            <span class="price-list__time">60分</span>
+            <span class="price-list__price"><strong>8,800円</strong></span>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__head">
+              <span class="price-list__name">産後骨盤ケア</span>
+              <span class="price-list__sub">お子さま連れOK</span>
+            </div>
+            <span class="price-list__time">45分</span>
+            <span class="price-list__price"><strong>7,150円</strong></span>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__head"><span class="price-list__name">回数券（5回）</span></div>
+            <span class="price-list__time">―</span>
+            <span class="price-list__price"><strong>30,800円</strong></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 6. 院長紹介 ===================== -->
+    <section class="section section--tint" id="director">
+      <div class="container">
+        <h2 class="section__title">院長紹介</h2>
+
+        <div class="director fade-in">
+          <!-- 院長のイラスト（顔写真は使わず、後ろ姿のシンプルな絵） -->
+          <div class="director__illust">
+            <svg viewBox="0 0 200 200" role="img" aria-label="院長の後ろ姿のイラスト">
+              <circle cx="100" cy="100" r="100" class="director__illust-bg"/>
+              <!-- 頭 -->
+              <circle cx="100" cy="78" r="30" class="director__illust-body"/>
+              <!-- 体（肩から下） -->
+              <path d="M40 200 C40 140 65 118 100 118 C135 118 160 140 160 200 Z" class="director__illust-body"/>
+            </svg>
+          </div>
+
+          <div class="director__text">
+            <p class="director__role">院長</p>
+            <p class="director__name">森川 陽介<span>（もりかわ ようすけ）</span></p>
+            <p class="director__career">整体歴12年。スポーツトレーナー出身。都内の整体院で院長を務めたあと、地元のさくら台で開業。</p>
+            <blockquote class="director__message">
+              自分も長くひどい腰痛に悩みました。だから“その場しのぎ”ではなく、痛みが戻らない体づくりをお手伝いします。
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. 初めての方へ（来院の流れ） ===================== -->
+    <section class="section" id="flow">
+      <div class="container">
+        <h2 class="section__title">初めての方へ</h2>
+
+        <!-- 4つのステップ（番号付き） -->
+        <ol class="flow fade-in">
+          <li class="flow__step">
+            <span class="flow__number">1</span>
+            <p class="flow__text">ご予約<br><small>（電話・LINE）</small></p>
+          </li>
+          <li class="flow__step">
+            <span class="flow__number">2</span>
+            <p class="flow__text">カウンセリング<br>・姿勢チェック</p>
+          </li>
+          <li class="flow__step">
+            <span class="flow__number">3</span>
+            <p class="flow__text">施術</p>
+          </li>
+          <li class="flow__step">
+            <span class="flow__number">4</span>
+            <p class="flow__text">セルフケアのご説明<br>・次回のご提案</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== 8. お客様の声 ===================== -->
+    <section class="section section--tint" id="voice">
+      <div class="container">
+        <h2 class="section__title">お客様の声</h2>
+
+        <div class="voices">
+          <figure class="voice fade-in">
+            <blockquote class="voice__text">10年来の腰痛が、3回目で朝つらくなくなりました。</blockquote>
+            <figcaption class="voice__person">40代・会社員・男性</figcaption>
+          </figure>
+          <figure class="voice fade-in">
+            <blockquote class="voice__text">ボキボキしないので怖くなかったです。子どもを連れて行けるのも助かります。</blockquote>
+            <figcaption class="voice__person">30代・主婦・女性</figcaption>
+          </figure>
+          <figure class="voice fade-in">
+            <blockquote class="voice__text">肩こりからくる頭痛が減って、仕事に集中できるようになりました。</blockquote>
+            <figcaption class="voice__person">50代・事務職・女性</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 9. よくある質問（タップで開け閉め） ===================== -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <h2 class="section__title">よくある質問</h2>
+
+        <!-- details / summary を使うと、タップで開け閉めできる -->
+        <div class="faq fade-in">
+          <details class="faq__item">
+            <summary class="faq__question">服装はどうすればいいですか？</summary>
+            <p class="faq__answer">着替えをご用意しています。仕事帰りのスーツのままでも大丈夫です。</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">痛くないですか？</summary>
+            <p class="faq__answer">ボキボキ鳴らす施術はしません。力加減はその都度確認します。</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">どれくらい通えばいいですか？</summary>
+            <p class="faq__answer">最初の1ヶ月は週1回がおすすめです。体の状態を見てご提案します。</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">保険は使えますか？</summary>
+            <p class="faq__answer">整体は保険の対象外のため、自費でのご案内です。</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">子ども連れでも大丈夫ですか？</summary>
+            <p class="faq__answer">はい。キッズスペースがあります。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 10. アクセス ===================== -->
+    <section class="section section--tint" id="access">
+      <div class="container">
+        <h2 class="section__title">アクセス</h2>
+
+        <div class="access fade-in">
+          <!-- 地図（ダミー） -->
+          <div class="access__map" role="img" aria-label="地図（ダミー）">
+            <span>MAP（ダミー）</span>
+          </div>
+
+          <!-- 店舗情報 -->
+          <dl class="access__info">
+            <dt>住所</dt>
+            <dd>みどり野市さくら台2-8-1<br>こもれびビル1階<br><small>（さくら台駅 東口から徒歩3分）</small></dd>
+
+            <dt>電話</dt>
+            <dd><a href="tel:000-0000-0000">000-0000-0000</a></dd>
+
+            <dt>営業時間</dt>
+            <dd>
+              平日 10:00〜20:00<small>（最終受付19:00）</small><br>
+              土日祝 9:00〜17:00<small>（最終受付16:00）</small>
+            </dd>
+
+            <dt>定休日</dt>
+            <dd>水曜日</dd>
+
+            <dt>予約</dt>
+            <dd>完全予約制（電話またはLINE）</dd>
+
+            <dt>駐車場</dt>
+            <dd>提携駐車場あり（2時間無料）</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== 11. フッター ===================== -->
+  <footer class="footer">
+    <p class="footer__name">こもれび整体院</p>
+    <p class="footer__notice">このサイトは制作練習用の架空のお店です</p>
+    <p class="footer__copy"><small>&copy; こもれび整体院</small></p>
+  </footer>
+
+  <!-- ===================== 12. 画面下に固定する予約ボタン ===================== -->
+  <div class="reserve-bar">
+    <a href="tel:000-0000-0000" class="button button--accent reserve-bar__button">
+      <span aria-hidden="true">☎</span> 電話で予約
+    </a>
+    <!-- LINEボタンは見た目だけ（リンク先はダミー） -->
+    <a href="#" class="button button--outline reserve-bar__button js-dummy-link">
+      LINEで予約
+    </a>
+  </div>
+
+  <!-- 動きのファイル（ページを読み込んだあとに動かす） -->
+  <script src="script.js"></script>
+</body>
+</html>
